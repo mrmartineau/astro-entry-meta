@@ -1,6 +1,6 @@
 {
   "name": "astro-entry-meta",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Publishing rules, computed fields and git info for Astro content collections: drafts, scheduled posts, reading time, last author. Like Eleventy and Hugo",
   "keywords": [
     "astro",
