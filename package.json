@@ -1,0 +1,75 @@
+{
+  "name": "astro-entry-meta",
+  "version": "0.0.0",
+  "description": "Publishing rules, computed fields and git info for Astro content collections: drafts, scheduled posts, reading time, last author. Like Eleventy and Hugo",
+  "keywords": [
+    "astro",
+    "astro-loader",
+    "content-collections",
+    "draft",
+    "eleventy",
+    "git",
+    "hugo",
+    "publishdate",
+    "reading-time",
+    "scheduled-posts"
+  ],
+  "homepage": "https://github.com/mrmartineau/astro-entry-meta",
+  "bugs": {
+    "url": "https://github.com/mrmartineau/astro-entry-meta/issues"
+  },
+  "license": "ISC",
+  "author": {
+    "name": "Zander Martineau",
+    "email": "zander@zander.wtf",
+    "url": "https://zander.wtf"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrmartineau/astro-entry-meta.git"
+  },
+  "files": [
+    "dist"
+  ],
+  "type": "module",
+  "main": "./dist/index.mjs",
+  "types": "./dist/index.d.mts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.mts",
+      "default": "./dist/index.mjs"
+    },
+    "./package.json": "./package.json"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "tsdown",
+    "check": "vp check --fix",
+    "dev": "tsdown --watch",
+    "prepare": "vp config",
+    "release": "semantic-release",
+    "test": "bun test"
+  },
+  "devDependencies": {
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/github": "^11.0.0",
+    "@types/bun": "^1.3.10",
+    "@types/node": "^26.6.6",
+    "astro": "^7.0.6",
+    "semantic-release": "^25.0.3",
+    "tsdown": "^0.23.4",
+    "typescript": "^7.0.2",
+    "vite": "catalog:",
+    "vite-plus": "catalog:"
+  },
+  "peerDependencies": {
+    "astro": "^5.0.0 || ^6.0.0 || ^7.0.0"
+  },
+  "engines": {
+    "node": ">=20.19.0"
+  },
+  "packageManager": "pnpm@11.10.0"
+}
