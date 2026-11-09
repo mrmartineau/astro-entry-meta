@@ -13,6 +13,12 @@ The repo is a single npm package (`astro-entry-meta`): source in `src/`,
 ESM-only output via tsdown. `pnpm-workspace.yaml` holds the vite catalog and
 dependency build allowlist — don't remove it.
 
+## Coding standards
+
+Follow the `coding-standards` skill (`~/code/mrmartineau/agent-skills/skills/coding-standards/`). Where this file and the skill disagree, this file wins: it describes how this repo already works. Do not rename existing files or classes to match the skill unless asked.
+
+Known differences from the skill: none known.
+
 ## Commands
 
 Run everything from the repo root. pnpm for installs, Bun as the test runner.
